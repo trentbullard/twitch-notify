@@ -14,5 +14,23 @@
       "js": ["scripts/content.js"],
       "matches": ["https://www.twitch.tv/*"]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "https://api.twitch.tv/*",
+    "https://www.twitch.tv/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "default_popup": "popup.html"
+  }
 }
